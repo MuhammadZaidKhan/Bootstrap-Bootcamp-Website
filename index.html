@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
     rel="stylesheet"
-    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-    crossorigin="anonymous">
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+  />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   <link
     href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css"
@@ -19,7 +18,7 @@
 <body>
   <!-- Navbar -->
 
-  <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
     <div class="container">
       <a href="#" class="navbar-brand">Frontend Bootcamp</a>
 
@@ -177,10 +176,160 @@
 
   </section>
 
+  <!-- Questions -->
+
+  <section id="questions" class="p-4">
+    <div class="container">
+      <div class="row">
+        <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+
+        <div class="accordion accordion-flush" id="questions">
+          <!-- item 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-one">
+                Hey Everybody
+              </button>
+            </h2>
+            <div id="question-one" class="accordion-collapse collapse" data-bs-parent="#questions">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+            </div>
+          </div>
+          <!-- item 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-two">
+                Hey How are you doing
+              </button>
+            </h2>
+            <div id="question-two" class="accordion-collapse collapse" data-bs-parent="#questions">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+            </div>
+          </div>
+          <!-- item 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-three">
+                Where you from
+              </button>
+            </h2>
+            <div id="question-three" class="accordion-collapse collapse" data-bs-parent="#questions">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+            </div>
+          </div>
+          <!-- item 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-four">
+                How do i Sign up
+              </button>
+            </h2>
+            <div id="question-four" class="accordion-collapse collapse" data-bs-parent="#questions">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+            </div>
+          </div>
+          <!-- item 5 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-five">
+                What else can i do
+              </button>
+            </h2>
+            <div id="question-five" class="accordion-collapse collapse" data-bs-parent="#questions">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="instructors" class="p-5 bg-primary">
+    <div class="container">
+      <h2 class="text-center text-white">Our Instructors</h2>
+      <p class="lead text-center text-white mb-5">
+        Our instructors all have 5+ years working as a web developer in the
+        industry
+      </p>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-light">
+            <div class="card-body text-center">
+              <img
+                src="https://randomuser.me/api/portraits/men/10.jpg"
+                class="rounded-circle mb-3"
+                alt=""/>
+                <h3 class="card-title mb-3">John Doe</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quaerat illo tenetur cum vel quisquam excepturi, numquam similique, aperiam ab iusto sint quos? Id quidem in cupiditate ratione, quo nulla!</p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-light">
+            <div class="card-body text-center">
+              <img
+                src="https://randomuser.me/api/portraits/men/11.jpg"
+                class="rounded-circle mb-3"
+                alt=""/>
+                <h3 class="card-title mb-3">John Doe</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quaerat illo tenetur cum vel quisquam excepturi, numquam similique, aperiam ab iusto sint quos? Id quidem in cupiditate ratione, quo nulla!</p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-light">
+            <div class="card-body text-center">
+              <img
+                src="https://randomuser.me/api/portraits/men/12.jpg"
+                class="rounded-circle mb-3"
+                alt=""/>
+                <h3 class="card-title mb-3">John Doe</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quaerat illo tenetur cum vel quisquam excepturi, numquam similique, aperiam ab iusto sint quos? Id quidem in cupiditate ratione, quo nulla!</p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-light">
+            <div class="card-body text-center">
+              <img
+                src="https://randomuser.me/api/portraits/women/13.jpg"
+                class="rounded-circle mb-3"
+                alt=""/>
+                <h3 class="card-title mb-3">John Doe</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quaerat illo tenetur cum vel quisquam excepturi, numquam similique, aperiam ab iusto sint quos? Id quidem in cupiditate ratione, quo nulla!</p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+            </div>
+          </div>
+        </div>
+
+        
+      
+    </div>
+  </section>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
 
     
     
 </body>
-</html>
+</html> 
